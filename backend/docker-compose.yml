@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  api:
+    build: '.'
+    container_name: 'hst325-final'
+    networks:
+      - default
+      - traefik_proxy
+    labels:
+      traefik.enable: 'true'
+      traefik.frontend.rule: 'Host: hst325-final.robherley.xyz'
+      traefik.backend: 'hst325-final'
+      traefik.docker.network: 'traefik_proxy'
+    restart: always
+    depends_on:
+      - db
+
+networks:
+  traefik_proxy:
+    external:
+      name: traefik_proxy
