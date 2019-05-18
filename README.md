@@ -9,3 +9,6 @@ Add an environment variable for [mapbox](https://www.mapbox.com/) as `REACT_APP_
 Start the server (port 3001): `npm start --prefix backend/`
 
 Start the frontend (port 3000): `npm start --prefix frontend/`
+
+**NOTE**: Uses IndexedDB for caching, so second page load will be ~2 sec instead
+of ~7 seconds.
