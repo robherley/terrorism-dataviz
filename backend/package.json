@@ -1,0 +1,21 @@
+{
+  "name": "hst325-final",
+  "version": "1.0.0",
+  "description": "server for final proj",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "rob herley",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "d3-dsv": "^1.1.1",
+    "koa": "^2.7.0",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "sql-template-strings": "^2.2.2",
+    "sqlite": "^3.0.3"
+  }
+}
